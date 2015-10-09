@@ -2,9 +2,9 @@ FROM niaquinto/gradle
 
 MAINTAINER lllianga <lllianga@isoftstone.com>
 
-RUN pwd
+RUN echo $(pwd)
 
-RUN ls
+RUN echo $(ls)
 
 RUN gradle --version
 
