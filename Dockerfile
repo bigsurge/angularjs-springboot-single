@@ -3,8 +3,8 @@ FROM niaquinto/gradle
 MAINTAINER lllianga <lllianga@isoftstone.com>
 
 RUN echo $(pwd)
-
-RUN cd /app && echo $(ls)
+WORKDIR /app
+RUN ls
 
 RUN gradle --version
 
