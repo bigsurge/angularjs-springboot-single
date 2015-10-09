@@ -8,7 +8,7 @@ RUN echo $(ls)
 
 RUN gradle --version
 
-RUN /app/gradlew build  
+RUN cd /app && gradle build  
 
 ENTRYPOINT ["java $JAVA_OPTS -jar /app/build/libs/angularjs-sprinboot-single-0.0.1-SNAPSHOT.jar"]
 
